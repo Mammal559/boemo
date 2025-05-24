@@ -143,7 +143,7 @@ st.markdown('<style>div.block-container{padding-top:0rem !important;padding-bott
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("AISolution_web_server_logs_finals.CSV", parse_dates=["timestamp"], dayfirst=True)
+    df = pd.read_csv("AISolution_web_server_logs_finals.csv", parse_dates=["timestamp"], dayfirst=True)
     df['date'] = df['timestamp'].dt.date
     df['year'] = df['timestamp'].dt.year
     df['hour'] = df['timestamp'].dt.hour
